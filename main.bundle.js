@@ -283,7 +283,7 @@ var EthereumService = (function () {
     ], EthereumService);
     return EthereumService;
 }());
-//# sourceMappingURL=C:/Users/Owner/Desktop/TokenNinja_2/src/ethereum.service.js.map
+//# sourceMappingURL=C:/Users/Owner/Desktop/TokenNinja_original/src/ethereum.service.js.map
 
 /***/ },
 
@@ -318,7 +318,7 @@ var AboutComponent = (function () {
     ], AboutComponent);
     return AboutComponent;
 }());
-//# sourceMappingURL=C:/Users/Owner/Desktop/TokenNinja_2/src/about.component.js.map
+//# sourceMappingURL=C:/Users/Owner/Desktop/TokenNinja_original/src/about.component.js.map
 
 /***/ },
 
@@ -342,12 +342,16 @@ var tokenData = [
         description: "Augur combines the magic of prediction markets with the power of a decentralized network to create a stunningly accurate forecasting tool" },
     { name: "GDG", address: "0xe0b7927c4af23765cb51314a0e0521a9645f0e2a", digit: 9,
         description: "Every asset represents a unique bullion bar sitting in designated securitised custodial vaults." },
+    { name: "ICONOMI", address: "0x888666CA69E0f178DED6D75b5726Cee99A87D698", digit: 18,
+        description: "ICONOMI provides an opportunity for investors looking for high profits, not possible in the old economy" },
+    { name: "vDice", address: "0x5c543e7AE0A1104f78406C340E9C64FD9fCE5170", digit: 18,
+        description: "A Profit Sharing Token for the vDice Platform" },
     { name: "NinjaToken", address: "0x45D147C800d401350B24fc1cd5Fbc98040B177C8", digit: 18,
-        description: "Evolving" },
+        description: "Evolving" }
 ];
 var ERC20abi = JSON.parse('[{"constant":true,"inputs":[{"name":"_spender","type":"address"},{"name":"_value","type":"uint256"}],"name":"approve","outputs":[{"name":"success","type":"bool"}],"payable":false,"type":"function"},{"constant":true,"inputs":[],"name":"totalSupply","outputs":[{"name":"totalSupply","type":"uint256"}],"payable":false,"type":"function"},{"constant":true,"inputs":[{"name":"_from","type":"address"},{"name":"_to","type":"address"},{"name":"_value","type":"uint256"}],"name":"transferFrom","outputs":[{"name":"success","type":"bool"}],"payable":false,"type":"function"},{"constant":true,"inputs":[{"name":"_owner","type":"address"}],"name":"balanceOf","outputs":[{"name":"balance","type":"uint256"}],"payable":false,"type":"function"},{"constant":true,"inputs":[{"name":"_to","type":"address"},{"name":"_value","type":"uint256"}],"name":"transfer","outputs":[{"name":"success","type":"bool"}],"payable":false,"type":"function"},{"constant":true,"inputs":[{"name":"_owner","type":"address"},{"name":"_spender","type":"uint256"}],"name":"allowance","outputs":[{"name":"remaining","type":"uint256"}],"payable":false,"type":"function"},{"anonymous":false,"inputs":[{"indexed":true,"name":"_from","type":"address"},{"indexed":true,"name":"_to","type":"address"},{"indexed":false,"name":"_value","type":"uint256"}],"name":"Transfer","type":"event"},{"anonymous":false,"inputs":[{"indexed":true,"name":"_onwer","type":"address"},{"indexed":true,"name":"_spender","type":"address"},{"indexed":false,"name":"_value","type":"uint256"}],"name":"Approval","type":"event"}]');
 var NinjaAbi = JSON.parse('[{"constant":true,"inputs":[],"name":"name","outputs":[{"name":"","type":"string"}],"payable":false,"type":"function"},{"constant":true,"inputs":[{"name":"_spender","type":"address"},{"name":"_value","type":"uint256"}],"name":"approve","outputs":[{"name":"success","type":"bool"}],"payable":false,"type":"function"},{"constant":false,"inputs":[{"name":"_founder","type":"address"},{"name":"_admin","type":"address"}],"name":"changeFunder","outputs":[],"payable":false,"type":"function"},{"constant":true,"inputs":[],"name":"totalSupply","outputs":[{"name":"","type":"uint256"}],"payable":false,"type":"function"},{"constant":true,"inputs":[],"name":"blockDuration","outputs":[{"name":"","type":"uint256"}],"payable":false,"type":"function"},{"constant":true,"inputs":[{"name":"_from","type":"address"},{"name":"_to","type":"address"},{"name":"_value","type":"uint256"}],"name":"transferFrom","outputs":[{"name":"success","type":"bool"}],"payable":false,"type":"function"},{"constant":true,"inputs":[],"name":"fundingAccount","outputs":[{"name":"","type":"address"}],"payable":false,"type":"function"},{"constant":true,"inputs":[],"name":"decimals","outputs":[{"name":"","type":"uint256"}],"payable":false,"type":"function"},{"constant":true,"inputs":[{"name":"","type":"address"}],"name":"commit","outputs":[{"name":"","type":"string"}],"payable":false,"type":"function"},{"constant":true,"inputs":[],"name":"startBlock","outputs":[{"name":"","type":"uint256"}],"payable":false,"type":"function"},{"constant":false,"inputs":[{"name":"_commit","type":"string"}],"name":"buy","outputs":[],"payable":true,"type":"function"},{"constant":true,"inputs":[],"name":"founder","outputs":[{"name":"","type":"address"}],"payable":false,"type":"function"},{"constant":false,"inputs":[{"name":"_price","type":"uint256"},{"name":"_transferLock","type":"bool"}],"name":"setPrice","outputs":[],"payable":false,"type":"function"},{"constant":true,"inputs":[],"name":"version","outputs":[{"name":"","type":"string"}],"payable":false,"type":"function"},{"constant":true,"inputs":[{"name":"_owner","type":"address"}],"name":"balanceOf","outputs":[{"name":"balance","type":"uint256"}],"payable":false,"type":"function"},{"constant":true,"inputs":[],"name":"transferLock","outputs":[{"name":"","type":"bool"}],"payable":false,"type":"function"},{"constant":true,"inputs":[],"name":"fundingExchangeRate","outputs":[{"name":"","type":"uint256"}],"payable":false,"type":"function"},{"constant":true,"inputs":[],"name":"price","outputs":[{"name":"","type":"uint256"}],"payable":false,"type":"function"},{"constant":true,"inputs":[{"name":"_to","type":"address"},{"name":"_value","type":"uint256"}],"name":"transfer","outputs":[{"name":"success","type":"bool"}],"payable":false,"type":"function"},{"constant":false,"inputs":[{"name":"_fundinglock","type":"bool"},{"name":"_fundingAccount","type":"address"}],"name":"setFundingLock","outputs":[],"payable":false,"type":"function"},{"constant":false,"inputs":[{"name":"_startBlock","type":"uint256"},{"name":"_blockDuration","type":"uint256"},{"name":"_fundingExchangeRate","type":"uint256"}],"name":"setFundingEnv","outputs":[],"payable":false,"type":"function"},{"constant":false,"inputs":[],"name":"funding","outputs":[],"payable":true,"type":"function"},{"constant":true,"inputs":[{"name":"_onwer","type":"address"},{"name":"_spender","type":"address"}],"name":"allowance","outputs":[{"name":"allowance","type":"uint256"}],"payable":false,"type":"function"},{"constant":true,"inputs":[{"name":"_owner","type":"address"},{"name":"_spender","type":"uint256"}],"name":"allowance","outputs":[{"name":"remaining","type":"uint256"}],"payable":false,"type":"function"},{"constant":true,"inputs":[],"name":"fundingLock","outputs":[{"name":"","type":"bool"}],"payable":false,"type":"function"},{"constant":true,"inputs":[],"name":"admin","outputs":[{"name":"","type":"address"}],"payable":false,"type":"function"},{"inputs":[{"name":"_founder","type":"address"},{"name":"_admin","type":"address"}],"payable":false,"type":"constructor"},{"anonymous":false,"inputs":[{"indexed":false,"name":"sender","type":"address"},{"indexed":false,"name":"eth","type":"uint256"}],"name":"Funding","type":"event"},{"anonymous":false,"inputs":[{"indexed":false,"name":"buyer","type":"address"},{"indexed":false,"name":"eth","type":"uint256"}],"name":"Buy","type":"event"},{"anonymous":false,"inputs":[{"indexed":true,"name":"_from","type":"address"},{"indexed":true,"name":"_to","type":"address"},{"indexed":false,"name":"_value","type":"uint256"}],"name":"Transfer","type":"event"},{"anonymous":false,"inputs":[{"indexed":true,"name":"_onwer","type":"address"},{"indexed":true,"name":"_spender","type":"address"},{"indexed":false,"name":"_value","type":"uint256"}],"name":"Approval","type":"event"}]');
-//# sourceMappingURL=C:/Users/Owner/Desktop/TokenNinja_2/src/data.js.map
+//# sourceMappingURL=C:/Users/Owner/Desktop/TokenNinja_original/src/data.js.map
 
 /***/ },
 
@@ -399,7 +403,7 @@ var PageComponent = (function () {
     return PageComponent;
     var _a;
 }());
-//# sourceMappingURL=C:/Users/Owner/Desktop/TokenNinja_2/src/page.component.js.map
+//# sourceMappingURL=C:/Users/Owner/Desktop/TokenNinja_original/src/page.component.js.map
 
 /***/ },
 
@@ -436,7 +440,7 @@ if (__WEBPACK_IMPORTED_MODULE_3__environments_environment__["a" /* environment *
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_2__angular_core__["_40" /* enableProdMode */])();
 }
 __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dynamic__["a" /* platformBrowserDynamic */])().bootstrapModule(__WEBPACK_IMPORTED_MODULE_4__app_app_module__["a" /* AppModule */]);
-//# sourceMappingURL=C:/Users/Owner/Desktop/TokenNinja_2/src/main.js.map
+//# sourceMappingURL=C:/Users/Owner/Desktop/TokenNinja_original/src/main.js.map
 
 /***/ },
 
@@ -469,7 +473,7 @@ var AppComponent = (function () {
     ], AppComponent);
     return AppComponent;
 }());
-//# sourceMappingURL=C:/Users/Owner/Desktop/TokenNinja_2/src/app.component.js.map
+//# sourceMappingURL=C:/Users/Owner/Desktop/TokenNinja_original/src/app.component.js.map
 
 /***/ },
 
@@ -533,7 +537,7 @@ var AppModule = (function () {
     ], AppModule);
     return AppModule;
 }());
-//# sourceMappingURL=C:/Users/Owner/Desktop/TokenNinja_2/src/app.module.js.map
+//# sourceMappingURL=C:/Users/Owner/Desktop/TokenNinja_original/src/app.module.js.map
 
 /***/ },
 
@@ -556,7 +560,7 @@ var router = [
     { path: 'about', component: __WEBPACK_IMPORTED_MODULE_1__about_about_component__["a" /* AboutComponent */] },
 ];
 var routes = __WEBPACK_IMPORTED_MODULE_0__angular_router__["a" /* RouterModule */].forRoot(router);
-//# sourceMappingURL=C:/Users/Owner/Desktop/TokenNinja_2/src/app.router.js.map
+//# sourceMappingURL=C:/Users/Owner/Desktop/TokenNinja_original/src/app.router.js.map
 
 /***/ },
 
@@ -616,7 +620,7 @@ var BillboardComponent = (function () {
     return BillboardComponent;
     var _a;
 }());
-//# sourceMappingURL=C:/Users/Owner/Desktop/TokenNinja_2/src/billboard.component.js.map
+//# sourceMappingURL=C:/Users/Owner/Desktop/TokenNinja_original/src/billboard.component.js.map
 
 /***/ },
 
@@ -716,7 +720,7 @@ var FormComponent = (function () {
     return FormComponent;
     var _a;
 }());
-//# sourceMappingURL=C:/Users/Owner/Desktop/TokenNinja_2/src/form.component.js.map
+//# sourceMappingURL=C:/Users/Owner/Desktop/TokenNinja_original/src/form.component.js.map
 
 /***/ },
 
@@ -732,7 +736,7 @@ var FormComponent = (function () {
 var environment = {
     production: false
 };
-//# sourceMappingURL=C:/Users/Owner/Desktop/TokenNinja_2/src/environment.js.map
+//# sourceMappingURL=C:/Users/Owner/Desktop/TokenNinja_original/src/environment.js.map
 
 /***/ },
 
@@ -788,7 +792,7 @@ var environment = {
 
 
 
-//# sourceMappingURL=C:/Users/Owner/Desktop/TokenNinja_2/src/polyfills.js.map
+//# sourceMappingURL=C:/Users/Owner/Desktop/TokenNinja_original/src/polyfills.js.map
 
 /***/ },
 
@@ -837,7 +841,7 @@ module.exports = "<h1>\r\n  新功能开发中！ 敬请期待...\r\n</h1>\r\n<h
 /***/ 764:
 /***/ function(module, exports) {
 
-module.exports = "<!-- Navigation -->\r\n<nav class=\"navbar navbar-inverse navbar-fixed-top\" role=\"navigation\">\r\n    <div class=\"container\">\r\n        <!-- Brand and toggle get grouped for better mobile display -->\r\n        <div class=\"navbar-header\">\r\n            <button type=\"button\" class=\"navbar-toggle\" data-toggle=\"collapse\" data-target=\"#bs-example-navbar-collapse-1\">\r\n                <span class=\"sr-only\">Toggle navigation</span>\r\n                <span class=\"icon-bar\"></span>\r\n                <span class=\"icon-bar\"></span>\r\n                <span class=\"icon-bar\"></span>\r\n            </button>\r\n            <a class=\"navbar-brand\" routerLink=\"/\">Token Niaja</a>\r\n        </div>\r\n        <!-- Collect the nav links, forms, and other content for toggling -->\r\n        <div class=\"collapse navbar-collapse\">\r\n            <ul class=\"nav navbar-nav\">\r\n              <li><a routerLink=\"../about/\">About</a></li>\r\n              <!-- <li><a routerLink=\"../resume20170118/\">resume</a></li> -->\r\n            </ul>\r\n        </div>\r\n        <!-- /.navbar-collapse -->\r\n    </div>\r\n    <!-- /.container -->\r\n</nav>\r\n\r\n<!-- Page Content -->\r\n<div class=\"container\">\r\n  <router-outlet></router-outlet>\r\n  <!-- <app-page></app-page> -->\r\n\r\n  <hr>\r\n  <!-- Footer -->\r\n  <footer>\r\n    <div class=\"row\">\r\n        <div class=\"col-lg-12\">\r\n            <p>Copyright &copy; TokenNinja.com&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\r\n              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;contact:<a>TokenNinja.com@gmail.com</a></p>\r\n        </div>\r\n    </div>\r\n  </footer>\r\n</div>\r\n"
+module.exports = "<!-- Navigation -->\r\n<nav class=\"navbar navbar-inverse navbar-fixed-top\" role=\"navigation\">\r\n    <div class=\"container\">\r\n        <!-- Brand and toggle get grouped for better mobile display -->\r\n        <div class=\"navbar-header\">\r\n            <button type=\"button\" class=\"navbar-toggle\" data-toggle=\"collapse\" data-target=\"#bs-example-navbar-collapse-1\">\r\n                <span class=\"sr-only\">Toggle navigation</span>\r\n                <span class=\"icon-bar\"></span>\r\n                <span class=\"icon-bar\"></span>\r\n                <span class=\"icon-bar\"></span>\r\n            </button>\r\n            <a class=\"navbar-brand\" routerLink=\"/\">Token Ninja</a>\r\n        </div>\r\n        <!-- Collect the nav links, forms, and other content for toggling -->\r\n        <div class=\"collapse navbar-collapse\">\r\n            <ul class=\"nav navbar-nav\">\r\n              <li><a routerLink=\"../about/\">About</a></li>\r\n              <!-- <li><a routerLink=\"../resume20170118/\">resume</a></li> -->\r\n            </ul>\r\n        </div>\r\n        <!-- /.navbar-collapse -->\r\n    </div>\r\n    <!-- /.container -->\r\n</nav>\r\n\r\n<!-- Page Content -->\r\n<div class=\"container\">\r\n  <router-outlet></router-outlet>\r\n  <!-- <app-page></app-page> -->\r\n\r\n  <hr>\r\n  <!-- Footer -->\r\n  <footer>\r\n    <div class=\"row\">\r\n        <div class=\"col-lg-12\">\r\n            <p>Copyright &copy; TokenNinja.com&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\r\n              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;contact:<a>TokenNinja.com@gmail.com</a></p>\r\n        </div>\r\n    </div>\r\n  </footer>\r\n</div>\r\n"
 
 /***/ },
 
